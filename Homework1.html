@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array = [4,8, 1, 10, -5,  15, 2, -3, -100, 25, 3, 100,  5, 12, 7];
+        
+        var maxValue = array[0];
+        var minValue = array[0];
+        var summa = array[0];
+        var sar = array[0]
+        for(var i = 0; i< array.length; i++){
+            if(maxValue < array[i]){
+                maxValue = array[i];
+            }
+            if(minValue > array[i]){
+                minValue =array[i];
+            }
+            summa += array[i];
+            sar= summa/array.length;
+            if(array[i] % 2 ==1){
+                document.write(array[i] + " ");
+            }
+            
+        }
+
+        document.write("<br>");
+        document.write("maxValue: " + maxValue + "<br>");
+        document.write("minValue: " + minValue + "<br>");
+        document.write("summa: " + summa + "<br>");
+        document.write("sar: " + sar + "<br>");
+        
+        var min = 0;
+
+
+
+
+
+    </script>
+</body>
+</html>
